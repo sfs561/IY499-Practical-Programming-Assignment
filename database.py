@@ -75,3 +75,14 @@ def add_doctor(name, specialty):
 
     conn.commit()
     conn.close()
+
+
+def get_all_patients():
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM patients")
+    patients = cursor.fetchall()
+
+    conn.close()
+    return patients
