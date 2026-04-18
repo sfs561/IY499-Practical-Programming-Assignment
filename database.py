@@ -86,3 +86,14 @@ def get_all_patients():
 
     conn.close()
     return patients
+    
+
+def get_all_doctors():
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM doctors")
+    doctors = cursor.fetchall()
+
+    conn.close()
+    return doctors
