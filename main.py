@@ -1,16 +1,17 @@
-from database import create_tables, add_patient, add_doctor, get_all_patients, get_all_doctors
+"""
+main.py
+───────
+Entry point for the Medical Appointment System.
 
-def main():
-    create_tables()
+Run with:
+    python main.py
 
-    add_patient("Batuhan", 22, "07123456789")
-    add_doctor("Dr Smith", "Cardiology")
+This file does nothing except import MedicalApp and start the
+Tkinter event loop. All application logic lives in the other modules.
+"""
 
-    print("Patients:")
-    print(get_all_patients())
-
-    print("Doctors:")
-    print(get_all_doctors())
+from app import MedicalApp
 
 if __name__ == "__main__":
-    main()
+    app = MedicalApp()
+    app.mainloop()
