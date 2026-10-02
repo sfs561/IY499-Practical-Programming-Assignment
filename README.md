@@ -8,7 +8,6 @@ IY499 Practical Programming Assignment
 ---
 
 Name: Batuhan Kantas
-Student Number: 303061725
 Course Code: IY499
 GitHub Repository: https://github.com/sfs561/IY499-Practical-Programming-Assignment
 
